@@ -1,0 +1,39 @@
+#Adding files to git repository following git workflow
+
+$git status  #to check status of files in your git
+$git add .   #adding files to staging area
+$git commit -m"type your message"  #commiting files to local repo
+$git push  #pushing files to remote repository
+$git log   #shows logs of changes to repo
+
+#comparing changes to files
+
+$git diff --staged   #compare files in staging to local repo
+$git diff    #compare files from working to staged file
+$git diff HEAD  #comapre files from working dir to local repo
+
+#comparing changes between commits
+
+$git diff commit_id1 commit_id2
+$git diff HEAD HEAD~1   #compare latest commit to previous commit
+
+#link local repo to remote repo
+$git remote add origin git_github....
+
+$git show commit_id   #list changes done to commit
+$git checkout commit_id   #show commit details
+$git annotate filename   #list line by line changes with owner commits
+
+$git checkout branch_name  #moving into that branch from main branch
+$git merge filename  #commiting changes from new branch into main branch
+$git checkout -b branch_name   #create new branch and checkout the branch
+
+#revert changes
+$git restore filename #revert changes from working directory
+$git restore --stage filename #revert changes from stage
+$git reset HEAD~ #revert changes from remote repo
+
+$git rebase -1 HEAD~4 #compress too many commits into a single base commit
+
+
+#
